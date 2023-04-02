@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">	
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/menu.css">
+	<link rel="stylesheet" href="assets/css/mensaje.css">
+	
+    <title>Home - Login</title>
+</head>
+<body>
+    <!-- Sección del Menú  -->
+	 <div class="todo">
+		<section class="menu">
+			<header class="menu__header">        
+				<a href="index.html"><img class="menu__icono" src="assets/img/logo.png"></a>
+				<div class="menu__search">	
+					<input class="menu__search__input" type="text" name="search" placeholder="¿Que deseas buscar?" maxlength="30" data-quest>
+					<a href ="#"><img class="menu__icono__busqueda" src="assets/img/lupa_2.png" data-search></a>	
+				</div>
+			</header>							
+		</section>
+		
+	<!-- Sección de inicio  -->	
+		<section class="mensaje__block">
+			<span class="mensaje__block__icon"><img class="menu__icono" src="assets/img/error.png"></span>
+            <h1 class="mensaje__block__title">A ocurrido un error</h1>
+            <a href="todos_productos.html" class="mensaje__button">Regresar a la lista de productos</a>
+		</section>						
+	</div>
+	<script type="module" src="/controllers/buscar_controller.js"></script> 
+</body>
+</html>

@@ -1,0 +1,89 @@
+.diversos__linea{
+	display:flex;
+	justify-content:space-between;
+	margin-bottom:2%;	
+	}
+
+.diversos__titulo{
+	font-size:1.75rem;
+	font-weight:bold;
+}
+
+.ver__todo{
+	font-size:1.2rem;
+	text-decoration: none;
+	font-weight:bold;
+	color:#2a7ae4;
+}
+
+.diversos__precio{
+	font-size:1.2rem;
+	font-weight:bold;
+	margin:5% 0% 5% 0%;
+}
+
+.diversos__descripcion{
+	font-size:1.2rem;
+	font-weight:bold;
+	color:#2a7ae4;
+}
+
+@media screen and (min-width:0px){
+	.diversos__linea2{
+	display:flex;
+	justify-content:space-evenly;
+	flex-wrap: wrap;
+	}
+}
+
+@media screen and (min-width:992px){
+	.diversos__linea2{
+		justify-content:space-between;
+	}
+}
+/*
+@media screen and (min-width:992px){
+	.starwars__linea2{
+		flex-wrap: nowrap;
+	}
+}
+
+.skills__title{
+	text-align:center;
+	font-family:Raleway, Arial;
+	font-weight:bold;
+	font-size:1.5rem;
+	padding:1rem;
+}
+
+
+@media screen and (min-width:0){
+	.skills__line{
+	display:flex;
+	flex-direction:column;	
+	
+	}
+	
+	.skills__box{
+	background-color:#ffffff;
+	margin:1rem;
+	text-align:center;
+	padding:1rem;
+	}
+}
+
+@media screen and (min-width:375px){
+	.skills__line{
+	flex-direction:row;
+	justify-content:space-evenly;	
+	}
+	
+	.skills__box{
+	padding:2rem;
+	margin:0;
+	width:4rem;
+	}
+}
+*/
+
+	

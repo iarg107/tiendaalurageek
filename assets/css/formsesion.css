@@ -1,0 +1,29 @@
+.formsesion{
+	background-color:#C0C0C0;
+}
+
+.sesion__form{
+	padding:2.5rem 0 2.5rem 0;
+	display:flex;
+	flex-direction:column;	
+	align-items:center;	
+	flex-wrap: wrap;
+}
+
+.formsesion__input {
+	width:35%;
+	flex-grow:5;
+	height:3rem;
+	margin-top:1.5rem;
+	border:none;
+	resize: none;
+}
+
+.formsesion__boton{
+	width:35%;
+	margin-top:1rem;
+	background-color:#2a7ae4;
+	color:#fdfdfd;
+	border-color:#2a7ae4;
+	padding:1rem;
+}

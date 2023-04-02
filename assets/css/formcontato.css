@@ -1,0 +1,51 @@
+.formcontato{
+	background-color:#eaf2fd;
+}
+
+.formcontato__contacto{
+	padding:2.5rem 0 2.5rem 0;
+	display:flex;
+	justify-content:space-between;
+	align-items: baseline;
+	flex-wrap: wrap;
+}
+
+.menu__lista__item{
+	margin-bottom:1.5rem;
+	font-size:1.2rem;	
+}
+
+.menu__lista__item a{
+	text-decoration: none;
+	color:#000000;
+}
+
+.formcontato__form{	
+	flex-grow: 0.5;
+}
+
+.formcontato__titulo{
+	font-size:1.2rem;
+	font-weight:bold;	
+}
+
+.formcontato__input, .formcontato__textarea{
+	
+	width: 100%;
+	height:3rem;
+	margin-top:1.5rem;
+	border:none;
+}
+
+.formcontato__textarea{
+	height:6rem;
+	resize: none;
+}
+
+.formcontato__boton{
+	margin-top:1rem;
+	background-color:#2a7ae4;
+	color:#fdfdfd;
+	border-color:#2a7ae4;
+	padding:1rem;
+}

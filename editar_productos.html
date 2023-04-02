@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">	
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/menu.css">
+	<link rel="stylesheet" href="assets/css/banner.css">
+	<link rel="stylesheet" href="assets/css/formsesion.css">
+	<link rel="stylesheet" href="assets/css/formcontato.css">
+	<link rel="stylesheet" href="assets/css/footer.css"> 
+	
+    <title>Agregar Productos</title>
+</head>
+<body>
+    <!-- Sección del Menú  -->
+	 <div class="todo">
+		<section class="menu">
+			<header class="menu__header">        
+				<a href="index.html"><img class="menu__icono" src="assets/img/logo.png"></a>
+				<div class="menu__search">	
+					<input class="menu__search__input" type="text" name="search" placeholder="¿Que deseas buscar?" maxlength="30" data-quest>
+					<a href ="#"><img class="menu__icono__busqueda" src="assets/img/lupa_2.png" data-search></a>	
+				</div>
+				<a class="menu__boton" href ="todos_productos.html">Menu administrador</a>	
+			</header>							
+		</section>
+		
+	<!-- Sección de inicio  -->	
+		<section class="formsesion">
+			<form class="sesion__form" name="form" data-form>
+						<h3 class="formcontato__titulo">Editar producto</h3>
+                        <input class="formsesion__input" type="text" name="url" 		placeholder="URL de la imagen" 							required data-urlimagen>                     
+						<input class="formsesion__input" type="text" name="categoria" 	placeholder="Categoria" 				maxlength="30" 	required data-categoria>
+						<input class="formsesion__input" type="text" name="nombre" 		placeholder="Nombre del producto" 		maxlength="100" required data-nombre>
+						<input class="formsesion__input" type="text" name="precio" 		placeholder="Precio del producto" 		maxlength="50"	required data-precio>
+						<textarea class="formsesion__input" type="text" 				placeholder="Descripción del producto" 					required data-descripcion></textarea>
+                        <button type="submit" class="formsesion__boton">Agregar producto</button>
+             </form>
+		</section>					
+		
+	<!-- Sección de Contacto -->
+		<section class="formcontato" id="contacto">
+            <div  class="formcontato__contacto">
+                <div class="formcontato--esquerda">
+                    <img class="menu__icono" src="assets/img/logo.png">	
+                </div>
+				<div formcontato__text>
+					<ul class="menu__lista">
+						<li class="menu__lista__item"><a href="#">Quienes somos</a></li>			
+						<li class="menu__lista__item"><a href="#">Politicas de privacidad</a></li>
+						<li class="menu__lista__item"><a href="#">Programa de fidelidad</a></li>
+						<li class="menu__lista__item"><a href="#">Nuestras tiendas</a></li>
+						<li class="menu__lista__item"><a href="#">Quiero ser franquiciado</a></li>
+						<li class="menu__lista__item"><a href="#">Anuncie aqui</a></li>
+					</ul>	
+				</div>				
+                <div>
+                    <form class="formcontato__form" name="form">
+						<h3 class="formcontato__titulo">Contacta con nosotros</h3>
+                        <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre" maxlength="40" required data-tipo="nombre">                     
+                        <textarea class="formcontato__textarea" type="text" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje" maxlength="120" required data-tipo="mensaje"></textarea>
+                        <button type="submit" class="formcontato__boton">Enviar mensaje</button>
+                    </form>
+                </div> 
+			</div>	
+        </section>
+		
+	<!-- Sección de Footer -->
+		<section class="footer">
+            <div class="footer__rodape">
+                <p>Desarrollado por Ittan Allen</p>
+                <p>2022</p>
+            </div>
+        </section>	
+
+	</div>
+
+    <script type="module" src = "controllers/actualizar_controller.js"></script>
+	<script type="module" src="/controllers/buscar_controller.js"></script> 
+
+</body>
+</html>

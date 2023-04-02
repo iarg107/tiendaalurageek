@@ -1,0 +1,32 @@
+.banner{
+	background:url('../img/banner_imagen.png') no-repeat center / cover;	
+}
+
+.banner__imagen{
+	padding:10% 1% 5% 1%;	
+}
+
+.titulo__banner{
+	margin-top:rem;
+	font-size:3rem;
+	font-weight:bold;
+	color:white;
+}
+
+.titulo__secundario__banner{
+	margin-top:1rem;
+	padding-left:10%;
+	font-size:1.25rem;
+	font-weight:bold;
+	color:white;
+}
+
+.banner__boton{	
+	margin-top:1rem;
+	background-color:#2a7ae4;
+	color:#fdfdfd;
+	border-color:#2a7ae4;
+	padding:1% 2% 1% 2%;
+	text-decoration: none;
+	border-width: 2px;
+}

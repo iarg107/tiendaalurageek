@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">	
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/menu.css">
+	<link rel="stylesheet" href="assets/css/todos__productos.css">
+	<link rel="stylesheet" href="assets/css/formcontato.css">
+	<link rel="stylesheet" href="assets/css/footer.css"> 
+	
+    <title>AluraGeek</title>
+</head>
+<body>
+    <!-- Sección del Menú  -->
+	 <div class="todo">
+		<section class="menu">
+			<header class="menu__header">        
+				<a href="index.html"><img class="menu__icono" src="assets/img/logo.png"></a>
+				<div class="menu__search">	
+					<input class="menu__search__input" type="text" name="search" placeholder="¿Que deseas buscar?" maxlength="30" data-quest>
+					<a href ="#"><img class="menu__icono__busqueda" src="assets/img/lupa_2.png" data-search></a>	
+				</div>
+				
+			</header>							
+		</section>
+		
+	<!-- Sección Todos los Productos -->	
+		<section class="todos__productos" id="todos_productos">
+		
+		<div class="todos__productos__linea">
+			<h3 class="todos__productos__titulo">Todos los productos</h3>
+			<a class="agregar__productos" href="agregar_productos.html">Agregar producto</a>
+		</div>	
+
+        <div class="todos__productos__linea2" data-list>			
+		</div>
+    </section>
+				
+	<!-- Sección de Contacto -->
+		<section class="formcontato" id="contacto">
+            <div  class="formcontato__contacto">
+                <div class="formcontato--esquerda">
+                    <img class="menu__icono" src="assets/img/logo.png">	
+                </div>
+				<div formcontato__text>
+					<ul class="menu__lista">
+						<li class="menu__lista__item"><a href="#">Quienes somos</a></li>			
+						<li class="menu__lista__item"><a href="#">Politicas de privacidad</a></li>
+						<li class="menu__lista__item"><a href="#">Programa de fidelidad</a></li>
+						<li class="menu__lista__item"><a href="#">Nuestras tiendas</a></li>
+						<li class="menu__lista__item"><a href="#">Quiero ser franquiciado</a></li>
+						<li class="menu__lista__item"><a href="#">Anuncie aqui</a></li>
+					</ul>	
+				</div>				
+                <div>
+                    <form class="formcontato__form" name="form">
+						<h3 class="formcontato__titulo">Hable con nosotros</h3>
+                        <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre" maxlength="40" required data-tipo="nombre">                     
+                        <textarea class="formcontato__textarea" type="text" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje" maxlength="120" required data-tipo="mensaje"></textarea>
+                        <button type="submit" class="formcontato__boton">Enviar mensaje</button>
+                    </form>
+                </div> 
+			</div>	
+        </section>
+		
+	<!-- Sección de Footer -->
+		<section class="footer">
+            <div class="footer__rodape">
+                <p>Desarrollado por Ittan Allen</p>
+                <p>2022</p>
+            </div>
+        </section>	
+
+	</div>
+	<script type="module" src="/controllers/products_controller.js"></script>	
+	<script type="module" src="/controllers/buscar_controller.js"></script> 
+</body>
+</html>

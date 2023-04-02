@@ -1,0 +1,48 @@
+.products__linea{
+	display:flex;
+	justify-content:space-between;
+	margin-bottom:2%;	
+	}
+
+.products__titulo{
+	font-size:1.75rem;
+	font-weight:bold;
+}
+
+.ver__todo{
+	font-size:1.2rem;
+	text-decoration: none;
+	font-weight:bold;
+	color:#2a7ae4;
+}  
+
+
+.products__precio{
+	font-size:1.2rem;
+	font-weight:bold;
+	margin:5% 0% 5% 0%;
+}
+
+.products__descripcion{
+	text-decoration: none;
+	font-size:1.2rem;
+	font-weight:bold;
+	color:#2a7ae4;
+}
+
+@media screen and (min-width:0px){
+	.products__linea2{
+	display:flex;
+	justify-content:space-evenly;
+	flex-wrap: wrap;
+	}
+}
+
+@media screen and (min-width:992px){
+	.products__linea2{
+		justify-content:space-between;
+	}
+}
+
+
+	

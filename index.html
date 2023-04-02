@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">	
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/menu.css">
+	<link rel="stylesheet" href="assets/css/banner.css">
+	<link rel="stylesheet" href="assets/css/todos__productos__principal.css">
+	<link rel="stylesheet" href="assets/css/formcontato.css">
+	<link rel="stylesheet" href="assets/css/footer.css"> 
+	
+    <title>AluraGeek</title>
+</head>
+<body>
+    <!-- Sección del Menú  -->
+	 <div class="todo">
+		<section class="menu">
+			<header class="menu__header">        
+				<img class="menu__icono" src="assets/img/logo.png">
+				<div class="menu__search">	
+					<input class="menu__search__input" type="text" name="search" placeholder="¿Que deseas buscar?" maxlength="30" data-quest>
+					<a href ="#"><img class="menu__icono__busqueda" src="assets/img/lupa_2.png" data-search></a>	
+				</div>
+				<a class="menu__boton" href="login.html">Login</a>	
+			</header>							
+		</section>
+	
+	<!-- Sección del Banner  -->
+		<section class="banner">
+			<div  class="banner__imagen"> 
+				<h2 class="titulo__banner">Mes promocional</h2>
+                <h3 class="titulo__secundario__banner">Productos seleccionados con un 33% de descuento</h3>
+				<a class="banner__boton" href="#consolas">Ver Productos</a>
+			</div>	
+		</section>
+		
+	<!-- Sección Productos StarWars  -->	
+		<section class="products__starwars">
+		<div class="products__linea">
+			<h3 class="products__titulo">StarWars</h3>
+			<a class="ver__todo" href="todos_productos_cliente.html">Ver todo <img class="menu__icono__busqueda" src="assets/img/flecha.png"></a>
+		</div>
+            <div class="products__linea2" id="starwars" data-sec1>
+                   
+			</div>
+        </section>
+		
+	<!-- Sección Productos Consolas  -->	
+    <section class="products__consolas">
+		<div class="products__linea">
+			<h3 class="products__titulo">Consolas</h3>
+			<a class="ver__todo" href="todos_productos_cliente.html">Ver todo <img class="menu__icono__busqueda" src="assets/img/flecha.png"></a>
+		</div>
+            <div class="products__linea2" id="consolas" data-sec2>
+                  
+			</div>
+    </section>
+
+    <!-- Sección Productos Diversos  -->	
+    <section class="products__diversos">
+		<div class="products__linea">
+			<h3 class="products__titulo">Diversos</h3>
+			<a class="ver__todo" href="todos_productos_cliente.html">Ver todo <img class="menu__icono__busqueda" src="assets/img/flecha.png"></a>
+		</div>
+            <div class="products__linea2" id="diversos" data-sec3>
+                
+			</div>
+    </section>
+		
+	<!-- Sección de Contacto -->
+		<section class="formcontato" id="contacto">
+            <div  class="formcontato__contacto">
+                <div class="formcontato--esquerda">
+                    <img class="menu__icono" src="assets/img/logo.png">	
+                </div>
+				<div formcontato__text>
+					<ul class="menu__lista">
+						<li class="menu__lista__item"><a href="#">Quienes somos</a></li>			
+						<li class="menu__lista__item"><a href="#">Politicas de privacidad</a></li>
+						<li class="menu__lista__item"><a href="#">Programa de fidelidad</a></li>
+						<li class="menu__lista__item"><a href="#">Nuestras tiendas</a></li>
+						<li class="menu__lista__item"><a href="#">Quiero ser franquiciado</a></li>
+						<li class="menu__lista__item"><a href="#">Anuncie aqui</a></li>
+					</ul>	
+				</div>				
+                <div>
+                    <form class="formcontato__form" name="form">
+						<h3 class="formcontato__titulo">Hable con nosotros</h3>
+                        <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre" maxlength="40" required data-tipo="nombre">                     
+                        <textarea class="formcontato__textarea" type="text" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje" maxlength="120" required data-tipo="mensaje"></textarea>
+                        <button type="submit" class="formcontato__boton">Enviar mensaje</button>
+                    </form>
+                </div> 
+			</div>	
+        </section>
+		
+	<!-- Sección de Footer -->
+		<section class="footer">
+            <div class="footer__rodape">
+                <p>Desarrollado por Ittan Allen</p>
+                <p>2022</p>
+            </div>
+        </section>	
+	</div>
+	<script type="module" src="/controllers/buscar_controller.js"></script> 
+    <script type="module" src="controllers/items_controller.js"></script>
+	
+</body>
+</html>
